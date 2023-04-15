@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row bg-light p-2">
+      <div class="col-6">
+        <p class="fs-5"><i class="fa-brands fa-instagram me-1"> </i>Instagram</p>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <button type="button" class="btn btn-success btn-sm me-1 fs-7 h-75" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">create a new post</button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-sm ms-1" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <ul class="nav justify-content-center nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <i class="fa-regular fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+          <!--imagenes en cuadricula-->
+
+          <div class="container-fluid">
+            <div class="row mb-3 mx-auto">
+              <div class="col-4"><img src="https://picsum.photos/id/10/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/11/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/12/600/450" class="img-fluid" alt="img" /></div>
+            </div>
+            <div class="row mb-3 mx-auto">
+              <div class="col-4"><img src="https://picsum.photos/id/13/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/14/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/15/600/450" class="img-fluid" alt="img" /></div>
+            </div>
+            <div class="row mb-3 mx-auto">
+              <div class="col-4"><img src="https://picsum.photos/id/16/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/17/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/18/600/450" class="img-fluid" alt="img" /></div>
+            </div>
+            <div class="row mb-3 mx-auto">
+              <div class="col-4"><img src="https://picsum.photos/id/19/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/100/600/450" class="img-fluid" alt="img" /></div>
+              <div class="col-4"><img src="https://picsum.photos/id/102/600/450" class="img-fluid" alt="img" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+          <!--  imagenes en scroll--> 
+
+          <div class="container-fluid">
+            <div class="row mb-3">
+              <div class="col">
+                <div class="card mx-auto w-75" style="width: 50rem;">
+                  <h4 class="card-title">Amazing day</h4>
+                  <p class="card-tex position-absolute top-0 end-0">21/11</p>
+                  <img src="https://picsum.photos/id/10/600/450" class="card-img" alt="...">
+                  <div class="card-body">
+                    <p class="card-text fw-bold">12 Likes.</p>
+                    <p class="card-text">LOL.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="card mx-auto w-75" style="width: 50rem;">
+                  <h4 class="card-title">Really</h4>
+                  <p class="card-tex position-absolute top-0 end-0">21/11</p>
+                  <img src="https://picsum.photos/id/11/600/450" class="card-img" alt="...">
+                  <div class="card-body">
+                    <p class="card-text fw-bold">120 Likes.</p>
+                    <p class="card-text">Go home.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="card mx-auto w-75" style="width: 50rem;">
+                  <h4 class="card-title">Paradise</h4>
+                  <p class="card-tex position-absolute top-0 end-0">21/11</p>
+                  <img src="https://picsum.photos/id/12/600/450" class="card-img" alt="...">
+                  <div class="card-body">
+                    <p class="card-text fw-bold">200 Likes.</p>
+                    <p class="card-text">My life.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <div class="card mx-auto w-75" style="width: 50rem;">
+                  <h4 class="card-title">End</h4>
+                  <p class="card-tex position-absolute top-0 end-0">21/11</p>
+                  <img src="https://picsum.photos/id/13/600/450" class="card-img" alt="...">
+                  <div class="card-body">
+                    <p class="card-text fw-bold">60 Likes.</p>
+                    <p class="card-text">Final of the road</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+              <button type="button" class="btn btn-light mt-1"><i class="fa-solid fa-camera-retro"></i></button>
+              <button type="button" class="btn btn-light mt-1"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
